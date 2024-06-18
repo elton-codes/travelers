@@ -59,10 +59,10 @@ nav {
 
 
 #slide-container {
-    background-image: url(../img/hero_bg_1.jpg.webp);
+    /* background-image: url(../img/hero_bg_1.jpg.webp); */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.8)), url('../img/hero_bg_1.jpg.webp');
     height: 10vh;
-    /* position: relative; */
+    position: relative;
     background-size: cover;
     padding-top: 600px;
     animation: bgChange 20s linear infinite;
@@ -90,12 +90,13 @@ nav {
 }
 
 #slide-text h1 {
-    font-size: 30pt;
-    /* text-shadow: 10cm; */
-    height: 10pt;
+    font-size: 4rem;
+    height: 5pt;
+    font-weight: lighter;
 }
 
 #slide-text p {
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -117,26 +118,12 @@ nav {
 }
 
 .acts {
-    
-    justify-content: center;
-    padding-top: -50px;
-}
-
-/* .images {
-    overflow-x: hidden;
     display: flex;
-    align-items: center; 
     justify-content: center;
-    
-    top: 680px;
-    left: 190px;
-    gap: 20px;
-} */
-
-.images img {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+    padding: 0 4rem;
 }
 
 .images  {
@@ -146,24 +133,30 @@ nav {
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;  
+} 
+ 
+.images img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.images div:hover img {
+    transform: scale(1.03); /* Zoom effect on hover */
 }
 
 .images h3 {
-    /* margin-top: -50px; */
+    position: absolute;
     text-align: center;
-    color: #ef6c57;
-}
-
-#img2, img1, img3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.1)), url('../img/img_2.jpg.webp');
+    bottom: 10px;
+    margin-left: 50px;
+    color: white;
+    /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .packages {
-    /* display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 100px; */
+    padding-top: 8rem;
     margin: auto 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -174,4 +167,8 @@ nav {
 
 .packages p {
     color: black;
+}
+
+.packages-i {
+    color: #ef6c57;
 }
