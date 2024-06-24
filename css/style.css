@@ -380,7 +380,7 @@ header h3 {
 
 .footer-section ul li a:hover,
 .footer-section a:hover {
-    color: #C7A676;
+    color: #d9534f;
 }
 
 .footer-section .social a {
@@ -392,6 +392,5 @@ header h3 {
 .footer-bottom {
     margin-top: 100px;
     margin-bottom: 100px;
-    /* background: #3f2e2d; */
     padding: 1px;
 }
